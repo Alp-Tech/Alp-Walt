@@ -1,6 +1,6 @@
 import "./App.css";
 import {
-  BrowserRouter as Router,
+  MemoryRouter as Router,
   Route,
   Routes as Switch,
 } from "react-router-dom";
@@ -20,25 +20,25 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route path={"/"}>
+            <Route>
               <Login />
             </Route>
-            <Route path={"main"}>
+            <Route>
               <Main />
             </Route>
-            <Route path={"account"}>
+            <Route>
               <Account />
             </Route>
-            <Route path={"detail"}>
+            <Route>
               <Detail />
             </Route>
-            <Route path={"graph"}>
+            <Route>
               <Graph />
             </Route>
-            <Route path={"nft"}>
+            <Route>
               <Nft />
             </Route>
-            <Route path={"signing"}>
+            <Route>
               <Signing />
             </Route>
           </Switch>
