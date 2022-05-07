@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes as Switch,
+} from "react-router-dom";
+import Main from "./components/Main";
+import Account from "./components/Account";
+import Detail from "./components/Detail";
+import Graph from "./components/Graph";
+import Nft from "./components/Nft";
+import Signing from "./components/Signing";
+import Login from "./components/Login";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path={"/"}>
+              <Login />
+            </Route>
+            <Route path={"main"}>
+              <Main />
+            </Route>
+            <Route path={"account"}>
+              <Account />
+            </Route>
+            <Route path={"detail"}>
+              <Detail />
+            </Route>
+            <Route path={"graph"}>
+              <Graph />
+            </Route>
+            <Route path={"nft"}>
+              <Nft />
+            </Route>
+            <Route path={"signing"}>
+              <Signing />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 
