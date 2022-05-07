@@ -1,7 +1,105 @@
 *{
-  height: 600px;
-  width: 357px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:Josefin Sans ;
+}
+#root{
+  height: 600px;
+  width: 357px;
+}
+.Navbar{
+  height: 60px;
+  background-color: #147AE5;
+  display: flex;
+  padding: 10px 10px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.logoNav{
+  height: 90%;
+  width: 80px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoNav img{
+  height: auto;
+  width: 70px;
+}
+.navigation{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  height: 100%;
+  width: 100%;
+  margin-left: 30px;
+}
+.navigation div{
+    color: white;
+  font-size: 14px;
+  padding: 0px 10px;
+}
+/* LOGIN CSS */
+.login{
+  margin-top: 60px;
+}
+.logoCreate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logoCreate img{
+  height: 100px;
+}
+.logoCreate h3{
+  font-size: 50px;
+  font-weight: 600;
+  color: #00FFC4;
+}
+.welcome{
+  color: #147AE5;
+  margin: auto;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 60px;
+}
+.formInput{
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  color: #147AE5;
+  font-size: 18px;
+  font-weight: 600;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.formInput input{
+  border: none;
+  border-bottom: 2px solid #147AE5;
+  font-size: 22px;
+  margin-top: 10px;
+}
+form button{
+  width: 80%;
+  height: 45px;
+  border: none;
+  background-color: #147AE5;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: auto;
+  margin: 0px 33px;
+  margin-top: 40px;
 }
